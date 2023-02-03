@@ -1,6 +1,7 @@
 import Todo from './todo'
+
 async function getTodo() {
-    let todos = await fetch("http://localhost:3001/api/todo/list");
+    let todos = await fetch("https://todo-api-dusky.vercel.app/api/todo/list");
     return todos.json();
 }
 export default async function TodoList() {

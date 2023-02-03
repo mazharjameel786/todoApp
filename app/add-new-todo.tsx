@@ -4,7 +4,7 @@ import {useState} from 'react'
 
 async function addTodo(name,refresh) {
 
-    await fetch("/api/todo/add",{
+    await fetch("https://todo-api-dusky.vercel.app/api/todo/add",{
         method: "POST",
         body:   JSON.stringify({name})
     });

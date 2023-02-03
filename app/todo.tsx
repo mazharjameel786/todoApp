@@ -1,7 +1,7 @@
 'use client'; 
 import {useRouter} from 'next/navigation'
 
-async function update(id,isDone,refresh:()=>void) {
+async function update(id: any,isDone: any,refresh:()=>void) {
     await fetch("https://todo-api-dusky.vercel.app/api/todo/update",
     {method:'POST',
     mode:'no-cors',
@@ -10,7 +10,7 @@ async function update(id,isDone,refresh:()=>void) {
     refresh();
 }
 
-async function deleteTodo(id,refresh) {
+async function deleteTodo(id:any,refresh: any) {
     await fetch(`https://todo-api-dusky.vercel.app/api/todo/delete?id=${id}`,{
     method: "DELETE",
  });

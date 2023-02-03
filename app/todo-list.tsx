@@ -6,7 +6,7 @@ async function getTodo() {
 }
 export default async function TodoList() {
     const { todos } = await getTodo();
-    console.log(todos);
+   
 
     return (
         <div>
